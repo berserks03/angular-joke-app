@@ -1,0 +1,19 @@
+<div class="shadow p-3 mb-3 bg-light rounded">
+  <h5 class="question">
+    {{joke.question}}
+  </h5>
+  <h6
+    class="answer"
+    [hidden]="joke.hidden"
+  >
+    {{joke.answer}}
+  </h6>
+  <button
+    class="btn btn-success"
+    type="submit"
+    (click)="joke.hidden = !joke.hidden"
+  >
+    {{joke.hidden? 'Tell me!': 'Hide it!'}}
+  </button>
+  <button (click)="deleteJoke()" class="btn btn-danger" type="submit">Delete</button>
+</div>
