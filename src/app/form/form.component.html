@@ -15,7 +15,7 @@
       *ngIf="q.invalid && !this.valid"
       class="alert alert-danger"
     >
-      <div [hidden]="!q.errors.required">
+      <div [hidden]="!q.errors?.required">
         Question is required.
       </div>
     </div>
@@ -35,7 +35,7 @@
       *ngIf="a.invalid && !this.valid"
       class="alert alert-danger"
     >
-      <div [hidden]="!a.errors.required">
+      <div [hidden]="!a.errors?.required">
         Answer is required.
       </div>
     </div>

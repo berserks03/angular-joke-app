@@ -11,7 +11,7 @@ export class JokeComponent{
     question: string;
     answer: string;
     hidden: boolean;
-  }[] | undefined;
+  }[] = [];
   @Output() jokeDeletion = new EventEmitter();
 
   deleteJoke(i: number): void {
